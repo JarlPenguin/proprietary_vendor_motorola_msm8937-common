@@ -79,8 +79,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
     vendor/motorola/msm8937-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/msm8937-common/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
-    vendor/motorola/msm8937-common/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
-    vendor/motorola/msm8937-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/motorola/msm8937-common/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
     vendor/motorola/msm8937-common/proprietary/lib/libjson.so:system/lib/libjson.so \
@@ -101,6 +99,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/msm8937-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/motorola/msm8937-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
@@ -277,8 +277,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadspd.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libalarmservice_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalarmservice_jni.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libaptXScheduler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptXScheduler.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1cper.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crt.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1crtx.so \
@@ -522,8 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadspd.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libalarmservice_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalarmservice_jni.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
