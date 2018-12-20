@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/bin/perfservice:system/bin/perfservice \
+    vendor/motorola/msm8937-common/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/motorola/msm8937-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/motorola/msm8937-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
@@ -43,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/motorola/msm8937-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
+    vendor/motorola/msm8937-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -58,6 +60,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/motorola/msm8937-common/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/motorola/msm8937-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
@@ -76,9 +80,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/motorola/msm8937-common/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/motorola/msm8937-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/motorola/msm8937-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/motorola/msm8937-common/proprietary/lib/libYuvSkia.so:system/lib/libYuvSkia.so \
     vendor/motorola/msm8937-common/proprietary/lib/lib_mot_app6_metadata.so:system/lib/lib_mot_app6_metadata.so \
     vendor/motorola/msm8937-common/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
     vendor/motorola/msm8937-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/msm8937-common/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/msm8937-common/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
@@ -86,6 +95,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/libjson.so:system/lib/libjson.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmemalloc.so:system/lib/libmemalloc.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmot_afd.so:system/lib/libmot_afd.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
@@ -97,14 +110,51 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/motorola/msm8937-common/proprietary/lib/libuiblur.so:system/lib/libuiblur.so \
     vendor/motorola/msm8937-common/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/motorola/msm8937-common/proprietary/lib/libzxingcpp.so:system/lib/libzxingcpp.so \
     vendor/motorola/msm8937-common/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/msm8937-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/motorola/msm8937-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libaacextractor.so:system/lib64/extractors/libaacextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libamrextractor.so:system/lib64/extractors/libamrextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libflacextractor.so:system/lib64/extractors/libflacextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmidiextractor.so:system/lib64/extractors/libmidiextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmkvextractor.so:system/lib64/extractors/libmkvextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmp3extractor.so:system/lib64/extractors/libmp3extractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmp4extractor.so:system/lib64/extractors/libmp4extractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libmpeg2extractor.so:system/lib64/extractors/libmpeg2extractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/liboggextractor.so:system/lib64/extractors/liboggextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/extractors/libwavextractor.so:system/lib64/extractors/libwavextractor.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libaacwrapper.so:system/lib64/libaacwrapper.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/motorola/msm8937-common/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/motorola/msm8937-common/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/motorola/msm8937-common/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
@@ -163,6 +213,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
+    vendor/motorola/msm8937-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
@@ -186,6 +237,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.clearkey.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
+    vendor/motorola/msm8937-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
@@ -197,6 +249,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
     vendor/motorola/msm8937-common/proprietary/vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@1.0.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@2.0.so \
@@ -429,8 +483,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwbc_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwbc_jni.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdavenhancements.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmsink.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsink.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
@@ -583,6 +641,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
@@ -653,6 +712,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
@@ -707,10 +767,12 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleCS47L35 \
     HotwordEnrollmentTGoogleCS47L35 \
     HotwordEnrollmentXGoogleCS47L35 \
+    WfdService \
     atfwd \
     com.qualcomm.location \
     ims \
     qcrilmsgtunnel \
     TimeService \
     QPerformance \
-    UxPerformance
+    UxPerformance \
+    WfdCommon
