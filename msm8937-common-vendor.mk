@@ -663,7 +663,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
     embms \
-    ims \
     imssettings \
     CNEService \
     HotwordEnrollmentOKGoogleCS47L35 \
@@ -671,6 +670,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleCS47L35 \
     atfwd \
     com.qualcomm.location \
+    ims \
     qcrilmsgtunnel \
     TimeService \
     QPerformance
