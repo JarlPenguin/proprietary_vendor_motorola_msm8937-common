@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/motorola/msm8937-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/motorola/msm8937-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
@@ -56,28 +54,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/ConnectivityExt.xml:system/vendor/etc/permissions/ConnectivityExt.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/cneapiclient.xml:system/vendor/etc/permissions/cneapiclient.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.motorola.cameraone.xml:system/vendor/etc/permissions/com.motorola.cameraone.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.motorola.hardware.dtv.xml:system/vendor/etc/permissions/com.motorola.hardware.dtv.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/vendor/etc/permissions/com.qti.dpmframework.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/vendor/etc/permissions/com.qti.location.sdk.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/vendor/etc/permissions/com.qualcomm.location.vzw_library.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/vendor/etc/permissions/com.qualcomm.location.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/vendor/etc/permissions/com.quicinc.cne.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/embms.xml:system/vendor/etc/permissions/embms.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/ims.xml:system/vendor/etc/permissions/ims.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/imscm.xml:system/vendor/etc/permissions/imscm.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/izat.xt.srv.xml:system/vendor/etc/permissions/izat.xt.srv.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/mot_dtv_permissions.xml:system/vendor/etc/permissions/mot_dtv_permissions.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/vendor/etc/permissions/qti-vzw-ims-internal.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.motorola.hardware.dtv.xml:system/etc/permissions/com.motorola.hardware.dtv.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/mot_dtv_permissions.xml:system/etc/permissions/mot_dtv_permissions.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/motorola/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/msm8937-common/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/msm8937-common/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
+    vendor/motorola/msm8937-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/motorola/msm8937-common/proprietary/lib/libYuvSkia.so:system/lib/libYuvSkia.so \
     vendor/motorola/msm8937-common/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
+    vendor/motorola/msm8937-common/proprietary/lib/lib_mot_app6_metadata.so:system/lib/lib_mot_app6_metadata.so \
+    vendor/motorola/msm8937-common/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
     vendor/motorola/msm8937-common/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/msm8937-common/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
@@ -86,9 +87,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmemalloc.so:system/lib/libmemalloc.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmot_afd.so:system/lib/libmot_afd.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmotefem_svc.so:system/lib/libmotefem_svc.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/motorola/msm8937-common/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/msm8937-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/motorola/msm8937-common/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
@@ -170,6 +173,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/motorola/msm8937-common/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
+    vendor/motorola/msm8937-common/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:system/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
@@ -177,6 +182,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/motorola/msm8937-common/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
+    vendor/motorola/msm8937-common/proprietary/vendor/etc/permissions/com.motorola.cameraone.xml:system/vendor/etc/permissions/com.motorola.cameraone.xml \
+    vendor/motorola/msm8937-common/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:system/vendor/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/motorola/msm8937-common/proprietary/vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
@@ -257,10 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libYuvSkia.so:system/lib/libYuvSkia.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/lib_drplugin_server.so:system/vendor/lib/lib_drplugin_server.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/lib_mot_app6_metadata.so:system/lib/lib_mot_app6_metadata.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/lib_mottof.so:system/lib/lib_mottof.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/lib_remote_simlock.so:system/vendor/lib/lib_remote_simlock.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -273,7 +277,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libadspd.so:system/vendor/lib/libadspd.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
@@ -353,8 +356,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmodalityservice_jni.so:system/vendor/lib/libmodalityservice_jni.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmot_afd.so:system/lib/libmot_afd.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libomx-dts.so:system/vendor/lib/libomx-dts.so \
@@ -700,35 +701,34 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
-	CNEService \
-	ConnectivityExt \
-	DTVPlayer \
-	DTVService \
-	HotwordEnrollmentOKGoogleCS47L35 \
-	HotwordEnrollmentTGoogleCS47L35 \
-	HotwordEnrollmentXGoogleCS47L35 \
-	QPerformance \
-	QtiTelephonyService \
-	QtiTelephonyServicelibrary \
-	TimeService \
-	atfwd \
-	cneapiclient \
-	com.qti.dpmframework \
-	com.qti.location.sdk \
-	com.qti.snapdragon.sdk.display \
-	com.qualcomm.location \
-	com.quicinc.cne \
-	com.quicinc.cne.api-V1.0-java \
-	dpmapi \
-	embms \
-	embmslibrary \
-	ims \
-	imscmlibrary \
-	imssettings \
-	izat.xt.srv \
-	qcrilhook \
-	qcrilmsgtunnel \
-	qti-telephony-common \
-	qti-vzw-ims-internal \
-	rcsimssettings \
-	tcmclient
+    QtiTelephonyService \
+    embms \
+    ims \
+    imssettings \
+    CNEService \
+    HotwordEnrollmentOKGoogleCS47L35 \
+    HotwordEnrollmentTGoogleCS47L35 \
+    HotwordEnrollmentXGoogleCS47L35 \
+    atfwd \
+    com.qualcomm.location \
+    qcrilmsgtunnel \
+    DTVPlayer \
+    DTVService \
+    TimeService \
+    ConnectivityExt \
+    QPerformance \
+    QtiTelephonyServicelibrary \
+    cneapiclient \
+    com.qti.dpmframework \
+    com.qti.location.sdk \
+    com.qti.snapdragon.sdk.display \
+    com.quicinc.cne.api-V1.0-java \
+    com.quicinc.cne \
+    dpmapi \
+    embmslibrary \
+    imscmlibrary \
+    izat.xt.srv \
+    qcrilhook \
+    rcsimssettings \
+    tcmclient \
+    qti-vzw-ims-internal
