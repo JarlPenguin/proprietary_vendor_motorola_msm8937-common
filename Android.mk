@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter potter cedric sanders montana perry ,$(TARGET_DEVICE)),)
+ifneq ($(filter cedric montana owens perry ,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
