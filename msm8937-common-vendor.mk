@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/motorola/msm8937-common/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/motorola/msm8937-common/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/motorola/msm8937-common/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
     vendor/motorola/msm8937-common/proprietary/lib/libjson.so:system/lib/libjson.so \
     vendor/motorola/msm8937-common/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
