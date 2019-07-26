@@ -337,10 +337,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmdtp_crypto.so:system/vendor/lib/libmdtp_crypto.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmdtpdemojni.so:system/vendor/lib/libmdtpdemojni.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmmhttpstack.so:system/vendor/lib/libmmhttpstack.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libmmi.so:system/vendor/lib/libmmi.so \
