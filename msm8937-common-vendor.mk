@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/ATFWD-daemon:system/vendor/bin/ATFWD-daemon \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/adspd:system/vendor/bin/adspd \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
-    vendor/motorola/msm8937-common/proprietary/vendor/bin/akmd09912:system/vendor/bin/akmd09912 \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/charge_only_mode:system/vendor/bin/charge_only_mode \
     vendor/motorola/msm8937-common/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
