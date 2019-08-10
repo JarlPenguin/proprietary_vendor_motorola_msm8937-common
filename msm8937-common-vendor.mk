@@ -56,7 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/com.motorola.hardware.dtv.xml:system/etc/permissions/com.motorola.hardware.dtv.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -67,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/motorola/msm8937-common/proprietary/etc/permissions/mot_dtv_permissions.xml:system/etc/permissions/mot_dtv_permissions.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/msm8937-common/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
@@ -299,8 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libdrplugin_client.so:system/vendor/lib/libdrplugin_client.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libdtvhal.so:system/vendor/lib/libdtvhal.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib/libdtvtuner.so:system/vendor/lib/libdtvtuner.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libesepm.so:system/vendor/lib/libesepm.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libevent_observer.so:system/vendor/lib/libevent_observer.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
@@ -560,8 +556,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libdtvhal.so:system/vendor/lib64/libdtvhal.so \
-    vendor/motorola/msm8937-common/proprietary/vendor/lib64/libdtvtuner.so:system/vendor/lib64/libdtvtuner.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libevent_observer.so:system/vendor/lib64/libevent_observer.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libfeedbackhandler.so:system/vendor/lib64/libfeedbackhandler.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
@@ -697,8 +691,6 @@ PRODUCT_PACKAGES += \
     atfwd \
     com.qualcomm.location \
     qcrilmsgtunnel \
-    DTVPlayer \
-    DTVService \
     TimeService \
     ConnectivityExt \
     QPerformance \
